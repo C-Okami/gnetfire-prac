@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+<!------------------------------------------------------
+Es importante colocarl aqui lo sgiente.
+Para que aga el gesto de zoom es nesesario ponerle:
+-------------------------------------------------------->
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gnetfire</title>
+<!-----------------------------------------------------------------
+Es muy importante seguir este orden para colocar los links de .css
+------------------------------------------------------------------>
+<!--    para los iconos es importante colocarlo asi:-->
+   <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<!--    es importante que para sobre escribir quede:-->
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- Inicio 1ª seccion   -->
+<!--  emmet:  .container>.row>.col-4>img-->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 col-md-4 mt-3">
+        <img src="img/logo_genet/logo-header.png" class="img-fluid" alt="logo">
+        </div>
+    </div>
+</div>
+<!-- Termino de 1ª seccion  -->
+
+<!--  Inica Nav  -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-borange">
+<!----------------------------------------------------------------------------------------
+Colores basicos:
+<nav class="navbar navbar-dark bg-dark"> es invertido pone el texto en blanck
+<nav class="navbar navbar-dark bg-primary"> es para color azul
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;"> para color azul claro
+__________________________________________________________________________________________
+Colores personalisado (pasoso a seguir):
+crear una nueva clase y en mobile se le colocara el color.
+------------------------------------------------------------------------------------------->
+  <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/logo_genet/netfire_logo_white_nav.png" alt="logo"></a> <!--  logotipo-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <i class="fas fa-ellipsis-v fa-lg p-2"></i>
+      <!--   <span class="navbar-toggler-icon"></span>    menu hamburgesa   -->
+      </button>
+      <!-- collapse es boton colapsable para menu hamburgesa -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <!--    empiesa la lista     -->
+        <ul class="navbar-nav ml-auto">
+<!---------------------------------------
+        Con ml lo aventara a la derecha
+        Con mx es para que lo centre
+----------------------------------------->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Acerca de <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Linea de Negocios</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Aliados de Negocios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+<!-------------------------------------------------------------------------------------------------
+Este es para un menu con sub menu
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------
+         Este es para poner un boton bloquedao
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+------------------------------------------------------------------------------------------------->
+        </ul>
+        <!--    asta aqui termina la lista -->
+<!-------------------------------------------------------------------------------------------------
+       Este es para un buscador
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+------------------------------------------------------------------------------------------------->
+      </div>
+  </div>
+</nav>
+<!--  Termina Nav  -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/poppper.min.js"></script> <!-- Esto sirve para los pop-up  -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- fin de js   -->
+
+</body>
+</html>
