@@ -1,4 +1,26 @@
-
 .bg-borange {
     background: #5c1c05;
+}
+
+/*estilo carusel*/
+    .carousel-caption {
+    bottom: 35px;
+}
+.btn-primary {
+    background-color: #5c1c05;
+    border-color: #721c24;
+}
+
+/*estilo pleca*/
+hr {
+    margin-top: .5rem;
+/***************************************************************
+    margin-top: .5rem!important;
+    para que sea lo primero leea ganando asi a las demas reglas
+***************************************************************/
+    border-top: 2px solid #a2353fa6;
+    width: 30%;
+}
+.media {
+    margin-bottom: 1rem;
 }
