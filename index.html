@@ -176,13 +176,14 @@ Este es para un menu con sub menu
         <h2 class="titulo text-center mt-5 mb-0">Acerca de Grupo NetFire</h2>
         <hr class="line">
         <div class="row">
-            <div class="col-12 col-md-6 order-1 order-md-0">
+            <div class="col-12 col-lg-6 order-1 order-lg-0">
             <img src="img/acerca/img_acerca.jpg" alt="acerca" class="img-fluid">
             </div>
-            <div class="col-12 col-md-6 order-0 order-md-1">
+            <div class="col-12 col-lg-6 order-0 order-lg-1">
         <p>Somos una empresa con más de 10 años de experiencia en la implementación soluciones de TI ayudando a nuestros clientes a cumplir con niveles de eficiencia, innovación y productividad necesarios en su mercado. <br> Poniendo a disposición tecnologías de cloud computing, administración de centro de datos, servidores, almacenamiento y redes, análisis de información y seguridad, y enfocados en integrar soluciones que generen valor a nuestros clientes.</p>
                 <div class="row">
-                    <div class="col-6">
+                   <!--    inicia  columna 1  -->
+                    <div class="col-12 col-lg-6">
                         <div class="media">
   <img src="img/acerca/mision_icon.png" class="align-self-start mr-3" alt="mission" width="30">
   <div class="media-body">
@@ -191,7 +192,9 @@ Este es para un menu con sub menu
 </div>
     <p>Ofertar soluciones y servicios reales de TI para la IP y el gobierno, que satisfagan sus necesidades y excedan sus expectativas generando valor a través de la excelencia en nuestros productos y servicios.</p>
                     </div>
-                    <div class="col-6">
+<!--   termina  colimna 1 -->
+<!--    inicia  columna 2  -->
+                    <div class="col-12 col-lg-6">
                         <div class="media">
   <img src="img/acerca/vision_icon.png" class="align-self-start mr-3" alt="vision" width="30">
   <div class="media-body">
@@ -200,13 +203,109 @@ Este es para un menu con sub menu
 </div>
      <p>Ser una empresa exitosa enfocada en la entrega de soluciones valiosas y con impacto al negocio; estableciendo relaciones de largo plazo con nuestros colaboradores, clientes y socios de negocio.</p>
                     </div>
+                   <!--   termina  colimna 2 -->
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 <!--  Termina seccion 1-->
+
+  <!--  Inicia seccion 2-->
+    <!-- emmet  section#servicios>.container>.row.justify-content-center>.col-12.col-md-6.col-lg-4*3-->
+<section id="servicios">
+    <div class="container">
+       <h2 class="titulo text-center mt-5 mb-0">Linea de Negocios</h2>
+        <hr class="line">
+         <h4 class="titulo text-center mb-4">¿Qué hacemos?</h4>
+        <div class="row justify-content-center">
+<!--  inicia  columna 1       -->
+            <div class="col-12 col-md-6 col-lg-4 order-0 order-lg-0">
+               <div class="media">
+  <img src="img/servicio/servicio1.png" class="align-self-start mr-3" alt="servicio1" width="55">
+  <div class="media-body">
+    <h5 class="mt-0">Implementación</h5>
+  </div>
+</div>
+    <p>Nuestros servicios tienen como objetivo la implementación exitosa de diversas tecnologías de acuerdo a las necesidades del cliente al menor costo posible.</p>
+            </div>
+            <!--  termina  columna 1       -->
+<!--  inicia   columna 2       -->
+            <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
+                       <div class="media">
+  <img src="img/servicio/servicio2.png" class="align-self-start mr-3" alt="servicio2" width="55">
+  <div class="media-body">
+    <h5 class="mt-0">Servicios <br> Administrados</h5>
+  </div>
+</div>
+    <p>La solución de servicios administrados es un paquete completo para garantizarle al cliente una solución con niveles de servicio, algunas de las actividades incluidas son:</p>
+       <ul>
+           <li>Verificación del estado de los productos.</li>
+           <li>Configuración de los productos.</li>
+           <li>Pruebas de funcionalidad.</li>
+           <li>Optimización de los productos.</li>
+           <li>Soporte Técnico Telefónico, Soporte Técnico Vía Correo Electrónico y Soporte Técnico en Sitio.</li>
+       </ul>
+            </div>
+            <!--  termina   columna 2       -->
+<!--  inicia   columna 3       -->
+            <div class="col-12 col-md-6 col-lg-4 order-1 order-lg-2">
+               <div class="media">
+  <img src="img/servicio/servicio3.png" class="align-self-start mr-3" alt="servicio3" width="55">
+  <div class="media-body">
+    <h5 class="mt-0">Soporte Técnico</h5>
+  </div>
+</div>
+    <p>Nuestros servicios tienen como objetivo la implementación exitosa de diversas tecnologías de acuerdo a las necesidades del cliente al menor costo posible.</p>
+            </div>
+            <!--   termina  columna 3       -->
+        </div>
+        </div>
+</section>
+  <!--  Termina seccion 2-->
+
+   <!--  Inicia seccion 3-->
+    <!-- emmet  section#lineas>.container>.row>.col-6.col-md-4.mb-4*6>img[src="img/negocio/nicon$.png"].d-block.mx-auto.img-fluid+h3.linea-titulo.text-center.mt-3{Titulo$} -->
+  <section id="lineas">
+      <div class="container">
+         <h2 class="titulo text-center mt-5 mb-0">Linea de Negocios</h2>
+        <hr class="line mb-5">
+          <div class="row">
+              <div class="col-6 col-md-4 mb-4">
+                <a href="#" data-toggle="modal" data-target="#adnistracionModal"> <img src="img/negocio/nicon1.png" alt="icon1" class="d-block mx-auto img-fluid"></a>
+                  <h4 class="linea-titulo text-center mt-3">Administración de Centro de Datos <br> de la Nube</h4>
+              </div>
+              <div class="col-6 col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#informacionModal"><img src="img/negocio/nicon2.png" alt="icon2" class="d-block mx-auto img-fluid"></a>
+                  <h4 class="linea-titulo text-center mt-3">Administración de la Información</h4>
+              </div>
+              <div class="col-6 col-md-4 mb-4">
+                 <a href="#" data-toggle="modal" data-target="#datosModal"> <img src="img/negocio/nicon3.png" alt="icon3" class="d-block mx-auto img-fluid"></a>
+                  <h4 class="linea-titulo text-center mt-3">Virtualización de Datos</h4>
+              </div>
+              <div class="col-6 col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#seguridadModal"><img src="img/negocio/nicon4.png" alt="icon4" class="d-block mx-auto img-fluid"></a>
+                  <h4 class="linea-titulo text-center mt-3">Seguridad</h4>
+              </div>
+              <div class="col-6 col-md-4 mb-4">
+                 <a href="#" data-toggle="modal" data-target="#proteciondModal"> <img src="img/negocio/nicon5.png" alt="icon5" class="d-block mx-auto img-fluid"></a>
+                  <h4 class="linea-titulo text-center mt-3">Protección de datos</h4>
+              </div>
+              <div class="col-6 col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#hardwareModal"><img src="img/negocio/nicon6.png" alt="icon6" class="d-block mx-auto img-fluid"></a>
+                  <h4 class="linea-titulo text-center mt-3">Soluciones de Hardware</h4>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Modal linea de negocio administracion-->
+
+  <!-- termina Modal linea de negocio administracion-->
+
+  <!--  Termina seccion 3-->
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.4.1.min.js"></script>

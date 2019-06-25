@@ -1,0 +1,60 @@
+/*
+ Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+*/
+
+/**********************************************
+Small devices (landscape phones, 568px and up)
+Inicia media querie de celular
+**********************************************/
+@media (min-width: 568px) {
+/*  se cambia ya que uno de lso iphons esde esa medida  */
+html{
+    font-size: 13px;
+}
+
+}
+/******************************
+Termina media querie de celular
+******************************/
+
+/**************************************
+Medium devices (tablets, 768px and up)
+Inicia media querie de celular
+**************************************/
+@media (min-width: 768px) {
+    html{
+    font-size: 14px;
+}
+
+}
+/******************************
+Termina media querie de celular
+******************************/
+
+/********************************
+Large devices (desktops, 992px and up)
+Inicia media querie de tableta*/
+@media (min-width: 992px) {
+    html{
+    font-size: 15px;
+}
+
+}
+/******************************
+Termina media querie de tableta
+******************************/
+
+/**************************************************
+Extra large devices (large desktops, 1200px and up)
+Inicia desk
+**************************************************/
+@media (min-width: 1200px) {
+    html{
+    font-size: 16px;
+}
+
+}
+/******************************
+Termina media querie de desk
+******************************/
