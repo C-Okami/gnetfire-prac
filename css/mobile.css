@@ -34,3 +34,11 @@ hr {
 .media {
     margin-bottom: 1rem;
 }
+
+.bg-gray {
+    background-color: gainsboro;
+}
+
+.text-borange {
+  color: #5c1c05;
+}

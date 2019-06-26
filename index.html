@@ -17,6 +17,7 @@ Es muy importante seguir este orden para colocar los links de .css
 <!--    es importante que para sobre escribir quede:-->
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 
@@ -173,11 +174,11 @@ Este es para un menu con sub menu
 <section id="nosotros">
     <div class="container">
 <!-- emmet para titulo      h2.titulo{Acerca de Grupo NetFire}+hr.line-->
-        <h2 class="titulo text-center mt-5 mb-0">Acerca de Grupo NetFire</h2>
+        <h2 class="titulo text-center mt-5 mb-0 wow zooIn" data-wow-offset="300" data-wow-duration="4s">Acerca de Grupo NetFire</h2>
         <hr class="line">
         <div class="row">
             <div class="col-12 col-lg-6 order-1 order-lg-0">
-            <img src="img/acerca/img_acerca.jpg" alt="acerca" class="img-fluid">
+            <img src="img/acerca/img_acerca.jpg" alt="acerca" class="img-fluid wow slideInLeft" data-wow-offset="200" data-wow-duration="2s">
             </div>
             <div class="col-12 col-lg-6 order-0 order-lg-1">
         <p>Somos una empresa con más de 10 años de experiencia en la implementación soluciones de TI ayudando a nuestros clientes a cumplir con niveles de eficiencia, innovación y productividad necesarios en su mercado. <br> Poniendo a disposición tecnologías de cloud computing, administración de centro de datos, servidores, almacenamiento y redes, análisis de información y seguridad, y enfocados en integrar soluciones que generen valor a nuestros clientes.</p>
@@ -215,7 +216,7 @@ Este es para un menu con sub menu
     <!-- emmet  section#servicios>.container>.row.justify-content-center>.col-12.col-md-6.col-lg-4*3-->
 <section id="servicios">
     <div class="container">
-       <h2 class="titulo text-center mt-5 mb-0">Linea de Negocios</h2>
+       <h2 class="titulo text-center mt-5 mb-0 wow zooIn" data-wow-offset="300" data-wow-duration="4s">Servicios Profesionales</h2>
         <hr class="line">
          <h4 class="titulo text-center mb-4">¿Qué hacemos?</h4>
         <div class="row justify-content-center">
@@ -269,6 +270,8 @@ Este es para un menu con sub menu
     <!-- la parte del img es para que jale las imágenes, se debe poner la ruta exacta, el nombre seguido del signo de $ y la extensión, todo entre comillas, se puso el display block para que la imagen se comporte como bloque   -->
     <section id="lineas">
         <div class="container">
+        <h2 class="titulo text-center mt-5 mb-0 wow zooIn" data-wow-offset="300" data-wow-duration="4s">Linea de Negocios</h2>
+        <hr class="line mb-5">
             <div class="row">
                 <div class="col-6 col-md-4 mb-4">
                    <a href="#" data-toggle="modal" data-target="#administracionModal">
@@ -309,6 +312,116 @@ Este es para un menu con sub menu
             </div>
         </div>
     </section>
+ <!--  Termina seccion 3-->
+
+    <!--  inicia seccion 4-->
+    <!--  emmet  section#aliados>.container>.row>(.col-12.col-md-5>p>lorem)+(.col-12.col-md-7>.row*3>.col-3*2>img[src="img/aliados/al$.png"].img-fluid)  -->
+<section id="aliados">
+    <div class="container">
+       <h2 class="titulo text-center mt-5 mb-0 wow zooIn" data-wow-offset="300" data-wow-duration="4s">Aliados de Negocios</h2>
+        <hr class="line mb-5">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <p>En los últimos años, una serie de avances en las tecnologías de información ha permitido crear sistemas más sofisticados y más seguros. Tenemos a su disposición soluciones de TI a la medida de sus necesidades, nuestras soluciones abarcan seguridad, monitoreo, optimización e infraestructura entre otras. Quienes aportan su experiencia y conocimiento con las mejores prácticas de negocio durante la implementación de soluciones.</p>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="row justify-content-center">
+                    <div class="col-3"><img src="img/aliados/al1.png" alt="" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al2.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-3"><img src="img/aliados/al3.png" alt="" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al4.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-3"><img src="img/aliados/al5.png" alt="" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al6.png" alt="" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--  Termina seccion 4-->
+
+   <!--  inicia seccion 4-->
+    <!--  emmet  section#contacto>.container>.row>.col-12+.col-12.col-md-6*2  -->
+<section id="contacto">
+    <div class="container">
+       <h2 class="titulo text-center mt-5 mb-0 wow zooIn" data-wow-offset="300" data-wow-duration="4s">Contactanos</h2>
+        <hr class="line mb-5">
+        <div class="row">
+            <div class="col-12 p-4 bg-gray">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15051.70987380979!2d-99.1759001!3d19.4155396!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc003b4bbcc9a5df4!2sEdumac+Condesa!5e0!3m2!1ses!2smx!4v1561561006995!5m2!1ses!2smx" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-md-6 mt-4">
+                <!--Form with header-->
+
+                    <form action="mail.php" method="post">
+                        <div class="rounded-0">
+                            <div class="card-header p-0">
+                                <div class="bg-borange text-white text-center py-2">
+                                    <h3><i class="fa fa-envelope"></i> Mensajeanos</h3>
+                                    <p class="m-0">Con gusto te ayudaremos</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+
+                                <!--Body-->
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user text-borange"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-borange"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-comment text-borange"></i></div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Enviar" class="btn btn-primary btn-block rounded-0 py-2">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!--Form with header-->
+            </div>
+            <div class="col-12 col-md-6 mt-5">
+                <h5>Para mayores informes sobre nuestros productos o alguna línea de servicio en específico por favor envíanos tu información y te contactaremos a la brevedad posible.</h5>
+                <p class="mt-3">
+                <i class="fas fa-street-view fa-2x mr-2 text-borange"></i>
+                Av Ejército Nacional 843, Granada, 11520 <br> Ciudad de México, CDMX
+                </p>
+                <p>
+                    <i class="fas fa-mobile-alt fa-2x mr-2 text-borange"></i>
+                    (55) 5212.2053 l 5211.0685
+                </p>
+                <p>
+                    <i class="fas fa-envelope fa-2x mr-2 text-borange"></i>
+                    contacto@gnetfire.com
+                </p>
+                <p>Horario de atencion de 09:00 a 18:00 Hrs</p>
+            </div>
+        </div>
+    </div>
+</section>
+ <!--  Termina seccion 4-->
 
     <!-- inicia Modal linea de negocio administracion -->
     <div class="modal fade" id="administracionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -514,15 +627,36 @@ Este es para un menu con sub menu
         </div>
     </div>
   <!-- termina Modal linea de negocio soluciones de hardware -->
-  <!--  Termina seccion 3-->
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/poppper.min.js"></script> <!-- Esto sirve para los pop-up  -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+     <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+       <script>
+        //$(selector).action();
+          /*if(condition){
+            si se cumple la condicion haces esto
+        } elese{
+        sino se cumple la condicion haces lo otro
+        }
+        */
+        $(window).scroll(function(){
+           var menu = $('nav');
+            if($(this).scrollTop()>175){
+            menu.addClass('fixed-top');
+            menu.css('opacity','0.75');
+        }else{
+            menu.removeClass('fixed-top');
+             menu.css('opacity','1');
+        }
+        });
+    </script>
     <!-- fin de js   -->
 
 </body>
