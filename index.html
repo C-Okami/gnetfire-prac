@@ -265,43 +265,255 @@ Este es para un menu con sub menu
   <!--  Termina seccion 2-->
 
    <!--  Inicia seccion 3-->
-    <!-- emmet  section#lineas>.container>.row>.col-6.col-md-4.mb-4*6>img[src="img/negocio/nicon$.png"].d-block.mx-auto.img-fluid+h3.linea-titulo.text-center.mt-3{Titulo$} -->
-  <section id="lineas">
-      <div class="container">
-         <h2 class="titulo text-center mt-5 mb-0">Linea de Negocios</h2>
-        <hr class="line mb-5">
-          <div class="row">
-              <div class="col-6 col-md-4 mb-4">
-                <a href="#" data-toggle="modal" data-target="#adnistracionModal"> <img src="img/negocio/nicon1.png" alt="icon1" class="d-block mx-auto img-fluid"></a>
-                  <h4 class="linea-titulo text-center mt-3">Administración de Centro de Datos <br> de la Nube</h4>
-              </div>
-              <div class="col-6 col-md-4 mb-4">
-                  <a href="#" data-toggle="modal" data-target="#informacionModal"><img src="img/negocio/nicon2.png" alt="icon2" class="d-block mx-auto img-fluid"></a>
-                  <h4 class="linea-titulo text-center mt-3">Administración de la Información</h4>
-              </div>
-              <div class="col-6 col-md-4 mb-4">
-                 <a href="#" data-toggle="modal" data-target="#datosModal"> <img src="img/negocio/nicon3.png" alt="icon3" class="d-block mx-auto img-fluid"></a>
-                  <h4 class="linea-titulo text-center mt-3">Virtualización de Datos</h4>
-              </div>
-              <div class="col-6 col-md-4 mb-4">
-                  <a href="#" data-toggle="modal" data-target="#seguridadModal"><img src="img/negocio/nicon4.png" alt="icon4" class="d-block mx-auto img-fluid"></a>
-                  <h4 class="linea-titulo text-center mt-3">Seguridad</h4>
-              </div>
-              <div class="col-6 col-md-4 mb-4">
-                 <a href="#" data-toggle="modal" data-target="#proteciondModal"> <img src="img/negocio/nicon5.png" alt="icon5" class="d-block mx-auto img-fluid"></a>
-                  <h4 class="linea-titulo text-center mt-3">Protección de datos</h4>
-              </div>
-              <div class="col-6 col-md-4 mb-4">
-                  <a href="#" data-toggle="modal" data-target="#hardwareModal"><img src="img/negocio/nicon6.png" alt="icon6" class="d-block mx-auto img-fluid"></a>
-                  <h4 class="linea-titulo text-center mt-3">Soluciones de Hardware</h4>
-              </div>
-          </div>
-      </div>
-  </section>
-  <!-- Modal linea de negocio administracion-->
+     <!--emmet: section#lineas>.container>.row>.col-6.col-md-4.mb-4*6>img[src="img/png/negocio$.png"].d-block.mx-auto.img-fluid+h3.linea-titulo.text-center.mt-3{Titulo}-->
+    <!-- la parte del img es para que jale las imágenes, se debe poner la ruta exacta, el nombre seguido del signo de $ y la extensión, todo entre comillas, se puso el display block para que la imagen se comporte como bloque   -->
+    <section id="lineas">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4 mb-4">
+                   <a href="#" data-toggle="modal" data-target="#administracionModal">
+                    <img src="img/negocio/nicon1.png" alt="icono1" class="d-block mx-auto img-fluid">
+                    </a>
+                    <h3 class="linea-titulo text-center mt-3">Administración de Centro de Datos de la Nube</h3>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                   <a href="#" data-toggle="modal" data-target="#informacionModal">
+                    <img src="img/negocio/nicon2.png" alt="icono2" class="d-block mx-auto img-fluid">
+                    </a>
+                    <h3 class="linea-titulo text-center mt-3">Administración de la Información</h3>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                   <a href="#" data-toggle="modal" data-target="#virtualizacionModal">
+                    <img src="img/negocio/nicon3.png" alt="icono3" class="d-block mx-auto img-fluid">
+                    </a>
+                    <h3 class="linea-titulo text-center mt-3">Virtualización de Datos</h3>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                   <a href="#" data-toggle="modal" data-target="#seguridadModal">
+                    <img src="img/negocio/nicon4.png" alt="icono4" class="d-block mx-auto img-fluid">
+                    </a>
+                    <h3 class="linea-titulo text-center mt-3">Seguridad</h3>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                   <a href="#" data-toggle="modal" data-target="#proteccionModal">
+                    <img src="img/negocio/nicon5.png" alt="icono5" class="d-block mx-auto img-fluid">
+                    </a>
+                    <h3 class="linea-titulo text-center mt-3">Protección de datos</h3>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                   <a href="#" data-toggle="modal" data-target="#solucionesModal">
+                    <img src="img/negocio/nicon6.png" alt="icono6" class="d-block mx-auto img-fluid">
+                    </a>
+                    <h3 class="linea-titulo text-center mt-3">Soluciones de Hardware</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- termina Modal linea de negocio administracion-->
+    <!-- inicia Modal linea de negocio administracion -->
+    <div class="modal fade" id="administracionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
 
+<!--                    .container-fluid>.row>(.col-12.col-md-6>img[src="img/png/negocio1.png"].d-block.mx-auto.img-fluid+h3.pie-foto.text-center.mt-3{Titulo})+(.col-12.col-md-6>p>lorem)-->
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="col-12 col-md-6">
+                               <img src="img/negocio/nicon1.png" alt="icono1" class="d-block mx-auto img-fluid">
+                               <h3 class="pie-foto text-center mt-3">Titulo</h3>
+                           </div>
+                           <div class="col-12 col-md-6">
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit harum vero officiis tempora optio ipsa, impedit iste necessitatibus veniam aspernatur tempore quos quaerat veritatis amet laudantium in voluptate, cumque dolorem.</p>
+                           </div>
+                       </div>
+                   </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- termina Modal linea de negocio administracion -->
+  <!-- inicia Modal administracion de la informacion -->
+    <div class="modal fade" id="informacionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+<!--                    .container-fluid>.row>(.col-12.col-md-6>img[src="img/png/negocio1.png"].d-block.mx-auto.img-fluid+h3.pie-foto.text-center.mt-3{Titulo})+(.col-12.col-md-6>p>lorem)-->
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="col-12 col-md-6">
+                               <img src="img/negocio/nicon2.png" alt="icono2" class="d-block mx-auto img-fluid">
+                               <h3 class="pie-foto text-center mt-3">Titulo</h3>
+                           </div>
+                           <div class="col-12 col-md-6">
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit harum vero officiis tempora optio ipsa, impedit iste necessitatibus veniam aspernatur tempore quos quaerat veritatis amet laudantium in voluptate, cumque dolorem.</p>
+                           </div>
+                       </div>
+                   </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- termina Modal administracion de la informacion -->
+    <!-- inicia Modal virtualizacion de datos-->
+    <div class="modal fade" id="virtualizacionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+<!--                    .container-fluid>.row>(.col-12.col-md-6>img[src="img/png/negocio1.png"].d-block.mx-auto.img-fluid+h3.pie-foto.text-center.mt-3{Titulo})+(.col-12.col-md-6>p>lorem)-->
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="col-12 col-md-6">
+                               <img src="img/negocio/nicon3.png" alt="icono3" class="d-block mx-auto img-fluid">
+                               <h3 class="pie-foto text-center mt-3">Titulo</h3>
+                           </div>
+                           <div class="col-12 col-md-6">
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit harum vero officiis tempora optio ipsa, impedit iste necessitatibus veniam aspernatur tempore quos quaerat veritatis amet laudantium in voluptate, cumque dolorem.</p>
+                           </div>
+                       </div>
+                   </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- termina Modal virtualizacion de datos-->
+    <!-- inicia Modal virtualizacion de seguridad-->
+    <div class="modal fade" id="seguridadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+<!--                    .container-fluid>.row>(.col-12.col-md-6>img[src="img/png/negocio1.png"].d-block.mx-auto.img-fluid+h3.pie-foto.text-center.mt-3{Titulo})+(.col-12.col-md-6>p>lorem)-->
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="col-12 col-md-6">
+                               <img src="img/negocio/nicon4.png" alt="icono4" class="d-block mx-auto img-fluid">
+                               <h3 class="pie-foto text-center mt-3">Titulo</h3>
+                           </div>
+                           <div class="col-12 col-md-6">
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit harum vero officiis tempora optio ipsa, impedit iste necessitatibus veniam aspernatur tempore quos quaerat veritatis amet laudantium in voluptate, cumque dolorem.</p>
+                           </div>
+                       </div>
+                   </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- termina Modal virtualizacion de seguridad-->
+     <!-- inicia Modal proteccion de Datos-->
+    <div class="modal fade" id="proteccionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+<!--                    .container-fluid>.row>(.col-12.col-md-6>img[src="img/png/negocio1.png"].d-block.mx-auto.img-fluid+h3.pie-foto.text-center.mt-3{Titulo})+(.col-12.col-md-6>p>lorem)-->
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="col-12 col-md-6">
+                               <img src="img/negocio/nicon5.png" alt="icono5" class="d-block mx-auto img-fluid">
+                               <h3 class="pie-foto text-center mt-3">Titulo</h3>
+                           </div>
+                           <div class="col-12 col-md-6">
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit harum vero officiis tempora optio ipsa, impedit iste necessitatibus veniam aspernatur tempore quos quaerat veritatis amet laudantium in voluptate, cumque dolorem.</p>
+                           </div>
+                       </div>
+                   </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- termina Modal proteccion de Datos-->
+    <!-- inicia Modal linea de negocio soluciones de hardware -->
+    <div class="modal fade" id="solucionesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+<!--                    .container-fluid>.row>(.col-12.col-md-6>img[src="img/png/negocio1.png"].d-block.mx-auto.img-fluid+h3.pie-foto.text-center.mt-3{Titulo})+(.col-12.col-md-6>p>lorem)-->
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="col-12 col-md-6">
+                               <img src="img/negocio/nicon6.png" alt="icono6" class="d-block mx-auto img-fluid">
+                               <h3 class="pie-foto text-center mt-3">Titulo</h3>
+                           </div>
+                           <div class="col-12 col-md-6">
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit harum vero officiis tempora optio ipsa, impedit iste necessitatibus veniam aspernatur tempore quos quaerat veritatis amet laudantium in voluptate, cumque dolorem.</p>
+                           </div>
+                       </div>
+                   </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- termina Modal linea de negocio soluciones de hardware -->
   <!--  Termina seccion 3-->
 
 
