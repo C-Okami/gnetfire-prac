@@ -42,3 +42,12 @@ hr {
 .text-borange {
   color: #5c1c05;
 }
+
+.bg-black {
+    width: 100%;
+    background-color: #000000;
+}
+
+.resize {
+    resize: none;
+}
