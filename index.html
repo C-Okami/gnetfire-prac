@@ -316,6 +316,7 @@ Este es para un menu con sub menu
 
     <!--  inicia seccion 4-->
     <!--  emmet  section#aliados>.container>.row>(.col-12.col-md-5>p>lorem)+(.col-12.col-md-7>.row*3>.col-3*2>img[src="img/aliados/al$.png"].img-fluid)  -->
+    <div id="triggerAliado1"><!--  este deve de ir vacio es un divisor con la funcionalidad de activar el magic scroll --></div>
 <section id="aliados">
     <div class="container">
        <h2 class="titulo text-center mt-5 mb-0 wow zooIn" data-wow-offset="300" data-wow-duration="4s">Aliados de Negocios</h2>
@@ -326,16 +327,16 @@ Este es para un menu con sub menu
             </div>
             <div class="col-12 col-md-7">
                 <div class="row justify-content-center">
-                    <div class="col-3"><img src="img/aliados/al1.png" alt="" class="img-fluid"></div>
-                    <div class="col-3"><img src="img/aliados/al2.png" alt="" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al1.png" alt="al" class="img-fluid" id="aliado1"></div>
+                    <div class="col-3"><img src="img/aliados/al2.png" alt="al" class="img-fluid"></div>
                 </div>
                 <div class="row justify-content-around">
-                    <div class="col-3"><img src="img/aliados/al3.png" alt="" class="img-fluid"></div>
-                    <div class="col-3"><img src="img/aliados/al4.png" alt="" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al3.png" alt="al" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al4.png" alt="al" class="img-fluid"></div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-3"><img src="img/aliados/al5.png" alt="" class="img-fluid"></div>
-                    <div class="col-3"><img src="img/aliados/al6.png" alt="" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al5.png" alt="al" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al6.png" alt="al" class="img-fluid"></div>
                 </div>
             </div>
         </div>
@@ -643,7 +644,11 @@ Este es para un menu con sub menu
     <script src="js/poppper.min.js"></script> <!-- Esto sirve para los pop-up  -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
-     <script src="js/wow.min.js"></script>
+     <script src="js/wow.min.js"></script> <!-- animacion woo  -->
+     <script src="scrolmagic/js/TweenMax.min.js"></script> <!-- animacion tween  -->
+    <script src="scrolmagic/js/ScrollMagic.min.js"></script> <!-- animacion scroll -->
+    <script src="scrolmagic/js/animation.gsap.min.js"></script> <!-- animacion y "activador" -->
+    <script src="scrolmagic/js/debug.addIndicators.min.js"></script> <!--  ?  -->
               <script>
               new WOW().init();
               </script>
@@ -654,7 +659,7 @@ Este es para un menu con sub menu
         } elese{
         sino se cumple la condicion haces lo otro
         }
-        */
+        forma manual */
         $(window).scroll(function(){
            var menu = $('nav');
             if($(this).scrollTop()>175){
@@ -667,6 +672,31 @@ Este es para un menu con sub menu
         });
     </script>
     <!-- fin de js   -->
-
+<script>
+    /* Inicia animacion con scroll magic */
+           //1.- Crear el controlador de scroll
+        var controller = new ScrollMagic.Controller();
+           //2.- Crear Animacion con GrenSock
+                //2.1 .- Crear linea de tiempo
+           var rotateAliado = new TimelineMax();
+                //2.2 .- Crear la animaccion
+/**************************************
+se requiere de:
+.from ("selector",tiempo,{propiedad});
+.to ("selector",tiempo,{propiedad});
+.fromto ("selector",tiempo,{propiedad});
+****************************************/
+           rotateAliado.from("#aliado1",1,{rotation:360});
+           //3.- Construir la Esena
+           var esena1 = new ScrollMagic.Scene({
+               //3.1 .- Activador o Trigger
+               triggerElement: "#triggerAliado1"
+           });
+                //3.2 .-Unir el Activado con Animacion
+           esena1.setTween(rotateAliado)
+                .addIndicators({name: "rotateAliado"})
+                .addTo(controller);
+/* Termina animacion con scroll magic */
+    </script>
 </body>
 </html>
