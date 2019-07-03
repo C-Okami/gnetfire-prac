@@ -268,6 +268,7 @@ Este es para un menu con sub menu
    <!--  Inicia seccion 3-->
      <!--emmet: section#lineas>.container>.row>.col-6.col-md-4.mb-4*6>img[src="img/png/negocio$.png"].d-block.mx-auto.img-fluid+h3.linea-titulo.text-center.mt-3{Titulo}-->
     <!-- la parte del img es para que jale las imágenes, se debe poner la ruta exacta, el nombre seguido del signo de $ y la extensión, todo entre comillas, se puso el display block para que la imagen se comporte como bloque   -->
+    <div id="triggerNeg"></div>
     <section id="lineas">
         <div class="container">
         <h2 class="titulo text-center mt-5 mb-0 wow zooIn" data-wow-offset="300" data-wow-duration="4s">Linea de Negocios</h2>
@@ -275,37 +276,37 @@ Este es para un menu con sub menu
             <div class="row">
                 <div class="col-6 col-md-4 mb-4">
                    <a href="#" data-toggle="modal" data-target="#administracionModal">
-                    <img src="img/negocio/nicon1.png" alt="icono1" class="d-block mx-auto img-fluid">
+                    <img src="img/negocio/nicon1.png" alt="icono1" class="d-block mx-auto img-fluid" id="neg1">
                     </a>
                     <h3 class="linea-titulo text-center mt-3">Administración de Centro de Datos de la Nube</h3>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
                    <a href="#" data-toggle="modal" data-target="#informacionModal">
-                    <img src="img/negocio/nicon2.png" alt="icono2" class="d-block mx-auto img-fluid">
+                    <img src="img/negocio/nicon2.png" alt="icono2" class="d-block mx-auto img-fluid" id="neg2">
                     </a>
                     <h3 class="linea-titulo text-center mt-3">Administración de la Información</h3>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
                    <a href="#" data-toggle="modal" data-target="#virtualizacionModal">
-                    <img src="img/negocio/nicon3.png" alt="icono3" class="d-block mx-auto img-fluid">
+                    <img src="img/negocio/nicon3.png" alt="icono3" class="d-block mx-auto img-fluid" id="neg3">
                     </a>
                     <h3 class="linea-titulo text-center mt-3">Virtualización de Datos</h3>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
                    <a href="#" data-toggle="modal" data-target="#seguridadModal">
-                    <img src="img/negocio/nicon4.png" alt="icono4" class="d-block mx-auto img-fluid">
+                    <img src="img/negocio/nicon4.png" alt="icono4" class="d-block mx-auto img-fluid" id="neg4">
                     </a>
                     <h3 class="linea-titulo text-center mt-3">Seguridad</h3>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
                    <a href="#" data-toggle="modal" data-target="#proteccionModal">
-                    <img src="img/negocio/nicon5.png" alt="icono5" class="d-block mx-auto img-fluid">
+                    <img src="img/negocio/nicon5.png" alt="icono5" class="d-block mx-auto img-fluid" id="neg5">
                     </a>
                     <h3 class="linea-titulo text-center mt-3">Protección de datos</h3>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
                    <a href="#" data-toggle="modal" data-target="#solucionesModal">
-                    <img src="img/negocio/nicon6.png" alt="icono6" class="d-block mx-auto img-fluid">
+                    <img src="img/negocio/nicon6.png" alt="icono6" class="d-block mx-auto img-fluid" id="neg6">
                     </a>
                     <h3 class="linea-titulo text-center mt-3">Soluciones de Hardware</h3>
                 </div>
@@ -679,6 +680,7 @@ Este es para un menu con sub menu
            //2.- Crear Animacion con GrenSock
                 //2.1 .- Crear linea de tiempo
            var rotateAliado = new TimelineMax();
+            var zoomNeg = new TimelineMax();
                 //2.2 .- Crear la animaccion
 /**************************************
 se requiere de:
@@ -686,16 +688,27 @@ se requiere de:
 .to ("selector",tiempo,{propiedad});
 .fromto ("selector",tiempo,{propiedad});
 ****************************************/
-           rotateAliado.staggerFrom("#aliado1, #aliado2, #aliado3, #aliado4, #aliado5, #aliado6", 1,{rotation:-720, scale: 0, autoAlpha:0, ease: Power3.easeOut,}"0.75");
+           rotateAliado.staggerFrom("#aliado1, #aliado2, #aliado3, #aliado4, #aliado5, #aliado6", 1,{rotation:-720, scale: 0, autoAlpha:0, ease: Power3.easeOut},"0.75");
            //3.- Construir la Esena
            var esena1 = new ScrollMagic.Scene({
                //3.1 .- Activador o Trigger
-               triggerElement: "#triggerAliado1"
+               triggerElement: "#triggerAliado1",
+               // con el sigueinte dara duracion a la animacion.
+               duration: 350
            });
                 //3.2 .-Unir el Activado con Animacion
            esena1.setTween(rotateAliado)
                 .addIndicators({name: "rotateAliado"})
                 .addTo(controller);
+
+    zoomNeg.staggerFrom("#neg1, #neg2, #neg3, #neg4, #neg5, #neg6", 1,{scale: 0, autoAlpha: 0, ease: Bounce.easeOut},"0.75");
+    var esena1 = new scrollMagic.Scene({
+       triggerElement:"#triggerNeg",
+        duration: 350
+    });
+    esena1.setTween(zoomNeg)
+    .addIndicators({name: "zoomNeg"})
+    .addTo(controller);
 /* Termina animacion con scroll magic */
     </script>
 </body>
