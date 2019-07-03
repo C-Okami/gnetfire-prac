@@ -322,21 +322,21 @@ Este es para un menu con sub menu
        <h2 class="titulo text-center mt-5 mb-0 wow zooIn" data-wow-offset="300" data-wow-duration="4s">Aliados de Negocios</h2>
         <hr class="line mb-5">
         <div class="row">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-md-5 mt-5">
                 <p>En los últimos años, una serie de avances en las tecnologías de información ha permitido crear sistemas más sofisticados y más seguros. Tenemos a su disposición soluciones de TI a la medida de sus necesidades, nuestras soluciones abarcan seguridad, monitoreo, optimización e infraestructura entre otras. Quienes aportan su experiencia y conocimiento con las mejores prácticas de negocio durante la implementación de soluciones.</p>
             </div>
             <div class="col-12 col-md-7">
                 <div class="row justify-content-center">
                     <div class="col-3"><img src="img/aliados/al1.png" alt="al" class="img-fluid" id="aliado1"></div>
-                    <div class="col-3"><img src="img/aliados/al2.png" alt="al" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al2.png" alt="al" class="img-fluid" id="aliado2"></div>
                 </div>
                 <div class="row justify-content-around">
-                    <div class="col-3"><img src="img/aliados/al3.png" alt="al" class="img-fluid"></div>
-                    <div class="col-3"><img src="img/aliados/al4.png" alt="al" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al3.png" alt="al" class="img-fluid" id="aliado3"></div>
+                    <div class="col-3"><img src="img/aliados/al4.png" alt="al" class="img-fluid" id="aliado4"></div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-3"><img src="img/aliados/al5.png" alt="al" class="img-fluid"></div>
-                    <div class="col-3"><img src="img/aliados/al6.png" alt="al" class="img-fluid"></div>
+                    <div class="col-3"><img src="img/aliados/al5.png" alt="al" class="img-fluid" id="aliado5"></div>
+                    <div class="col-3"><img src="img/aliados/al6.png" alt="al" class="img-fluid" id="aliado6"></div>
                 </div>
             </div>
         </div>
@@ -648,7 +648,7 @@ Este es para un menu con sub menu
      <script src="scrolmagic/js/TweenMax.min.js"></script> <!-- animacion tween  -->
     <script src="scrolmagic/js/ScrollMagic.min.js"></script> <!-- animacion scroll -->
     <script src="scrolmagic/js/animation.gsap.min.js"></script> <!-- animacion y "activador" -->
-    <script src="scrolmagic/js/debug.addIndicators.min.js"></script> <!--  ?  -->
+    <script src="scrolmagic/js/debug.addIndicators.min.js"></script> <!--  este es solo para prueva  -->
               <script>
               new WOW().init();
               </script>
@@ -686,7 +686,7 @@ se requiere de:
 .to ("selector",tiempo,{propiedad});
 .fromto ("selector",tiempo,{propiedad});
 ****************************************/
-           rotateAliado.from("#aliado1",1,{rotation:360});
+           rotateAliado.staggerFrom("#aliado1, #aliado2, #aliado3, #aliado4, #aliado5, #aliado6", 1,{rotation:-720, scale: 0, autoAlpha:0, ease: Power3.easeOut,}"0.75");
            //3.- Construir la Esena
            var esena1 = new ScrollMagic.Scene({
                //3.1 .- Activador o Trigger
