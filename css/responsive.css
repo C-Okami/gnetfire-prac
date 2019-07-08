@@ -26,6 +26,9 @@ Inicia media querie de celular
     html{
     font-size: 14px;
 }
+.alturacircuito {
+    height: 450px;
+}
 
 }
 /******************************
@@ -39,7 +42,9 @@ Inicia media querie de tableta*/
     html{
     font-size: 15px;
 }
-
+.alturacircuito {
+    height: 600px;
+}
 }
 /******************************
 Termina media querie de tableta

@@ -51,3 +51,7 @@ hr {
 .resize {
     resize: none;
 }
+
+.alturacircuito {
+    height: 350px;
+}
